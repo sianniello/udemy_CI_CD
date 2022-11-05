@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
-ADD . /app
+COPY . /app
 RUN npm install
 RUN npm run build
 EXPOSE 3000
